@@ -3,51 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to My Enhanced Website!">
+    <meta name="author" content="Your Name">
+    <meta name="keywords" content="enhanced website, HTML, CSS, JavaScript">
     <title>My Enhanced Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>My Enhanced Website</h1>
+        <nav>
+            <div class="container">
+                <h1 class="logo">My Enhanced Website</h1>
+                <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hi, my name is [Your Name] and I am a [Your Profession]. I have been working in this field for [Number of Years] years and have experience in [Skills and Expertise].</p>
+        <section class="hero">
+            <div class="container">
+                <h2>Welcome to My Enhanced Website</h2>
+                <p>Here you'll find information about my work, my skills, and my experience. Feel free to explore!</p>
+                <button class="cta">Get in touch</button>
+            </div>
         </section>
-        <section>
-            <h2>My Work</h2>
-            <p>Here are some examples of my work:</p>
-            <ul>
-                <li><a href="#">Project 1</a></li>
-                <li><a href="#">Project 2</a></li>
-                <li><a href="#">Project 3</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>My Skills</h2>
-            <p>Here are some of the skills that I have:</p>
-            <ul>
-                <li>Skill 1</li>
-                <li>Skill 2</li>
-                <li>Skill 3</li>
-            </ul>
-        </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2023 My Enhanced Website</p>
-    </footer>
+        <section class="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="profile.jpg" alt="My profile picture">
+                    </div>
+                    <div class="col-6">
+                        <p>Hi, my name is [Your Name] and I am a [Your Profession]. I have been working in this field for [Number of Years] years and have experience in [Skills and Expertise].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+        <section class="services">
+            <div class="container">
+                <h2>My Services</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Service 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-4">
+                        <h3>Service 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="col-4">
+                        <h3>Service 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="container">
+                <h2>My Portfolio</h2>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="project-1.jpg" alt="Project 1">
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit
